@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#081831"/><stop offset=".5" stop-color="#0D2C57"/><stop offset="1" stop-color="#1560B4"/>
+</linearGradient>
+<linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#2E86E8" stop-opacity="0"/><stop offset="1" stop-color="#2E86E8" stop-opacity=".45"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<rect y="560" width="1600" height="340" fill="url(#glow)"/>
+
+<!-- far city skyline -->
+<g fill="#0A2141">
+<rect x="60" y="620" width="70" height="180"/><rect x="150" y="660" width="55" height="140"/>
+<rect x="230" y="600" width="80" height="200"/><rect x="330" y="650" width="60" height="150"/>
+<rect x="410" y="585" width="90" height="215"/><rect x="520" y="640" width="65" height="160"/>
+<rect x="1380" y="620" width="75" height="180"/><rect x="1470" y="580" width="90" height="220"/>
+<rect x="600" y="668" width="120" height="132"/>
+</g>
+<!-- tiny warm windows on skyline -->
+<g fill="#F5B84A" opacity=".55">
+<rect x="72" y="640" width="8" height="6"/><rect x="96" y="668" width="8" height="6"/><rect x="248" y="620" width="8" height="6"/><rect x="278" y="648" width="8" height="6"/>
+<rect x="430" y="605" width="8" height="6"/><rect x="460" y="640" width="8" height="6"/><rect x="1490" y="600" width="8" height="6"/><rect x="1516" y="632" width="8" height="6"/>
+</g>
+
+<!-- building under construction: exposed concrete frame -->
+<g stroke="#0A1F3D" stroke-width="14" fill="none">
+<path d="M980 800V400M1080 800V400M1180 800V400M1280 800V400"/>
+<path d="M973 400h314M973 480h314M973 560h314M973 640h314M973 720h314M973 797h314"/>
+</g>
+<g fill="#0A1F3D">
+<rect x="973" y="386" width="314" height="16"/>
+</g>
+<!-- floor slabs partly cast -->
+<rect x="980" y="480" width="200" height="12" fill="#123159"/>
+<rect x="980" y="560" width="300" height="12" fill="#123159"/>
+<!-- scaffolding on left face -->
+<g stroke="#16406F" stroke-width="4" fill="none" opacity=".9">
+<path d="M930 800V420M955 800V420"/>
+<path d="M930 460h25M930 520h25M930 580h25M930 640h25M930 700h25M930 760h25"/>
+<path d="M930 460l25 60M930 520l25 60M930 580l25 60M930 640l25 60M930 700l25 60"/>
+</g>
+<!-- safety netting hint -->
+<rect x="1180" y="405" width="107" height="235" fill="#1C5CA0" opacity=".30"/>
+
+<!-- main tower crane -->
+<g stroke="#0A1F3D" stroke-width="10" fill="none">
+<path d="M760 800V300"/>
+<path d="M600 300h520"/>
+<path d="M760 240v60"/>
+</g>
+<g stroke="#0A1F3D" stroke-width="4" fill="none">
+<path d="M760 240L600 300M760 240l360 60"/>
+<path d="M620 300l20-14M660 300l24-18M700 300l28-22M820 300l-20-16M880 300l-26-20M940 300l-30-22M1000 300l-34-26M1060 300l-38-28"/>
+<path d="M1040 300v120"/>
+</g>
+<rect x="742" y="292" width="36" height="26" fill="#0A1F3D"/>
+<path d="M1028 420h24v18h-24z" fill="#0A1F3D"/>
+<circle cx="760" cy="238" r="5" fill="#E8483F"/>
+<!-- second smaller crane -->
+<g stroke="#0B2346" stroke-width="7" fill="none" opacity=".85">
+<path d="M1420 800V430"/><path d="M1330 430h230"/><path d="M1420 396v34"/>
+</g>
+<g stroke="#0B2346" stroke-width="3" fill="none" opacity=".85">
+<path d="M1420 396l-90 34M1420 396l140 34M1500 430v90"/>
+</g>
+<circle cx="1420" cy="394" r="4" fill="#E8483F" opacity=".9"/>
+
+<!-- palm trees (Malaysian feel) -->
+<g fill="#071A35">
+<path d="M180 800c6-70 2-120 -14-168l16-4c18 50 22 104 16 172z"/>
+<g transform="translate(172,628)">
+<path d="M0 0C-40 -18 -78 -16 -104 4 -66 -6 -30 2 0 0z"/>
+<path d="M0 0C-26 -36 -58 -50 -92 -46 -56 -40 -24 -22 0 0z"/>
+<path d="M0 0C10 -42 34 -66 68 -72 38 -56 18 -30 0 0z"/>
+<path d="M0 0C40 -20 76 -20 104 -2 68 -10 32 -4 0 0z"/>
+<path d="M0 0C30 -34 62 -46 96 -40 60 -36 26 -20 0 0z"/>
+<path d="M0 0C-12 -42 -34 -64 -66 -72 -38 -56 -16 -30 0 0z"/>
+</g>
+<path d="M320 800c4-52 1-88 -10-124l13-3c13 37 16 77 12 127z"/>
+<g transform="translate(316,674) scale(.72)">
+<path d="M0 0C-40 -18 -78 -16 -104 4 -66 -6 -30 2 0 0z"/>
+<path d="M0 0C-26 -36 -58 -50 -92 -46 -56 -40 -24 -22 0 0z"/>
+<path d="M0 0C10 -42 34 -66 68 -72 38 -56 18 -30 0 0z"/>
+<path d="M0 0C40 -20 76 -20 104 -2 68 -10 32 -4 0 0z"/>
+<path d="M0 0C30 -34 62 -46 96 -40 60 -36 26 -20 0 0z"/>
+</g>
+</g>
+
+<!-- zinc-roof shoplots / warehouse silhouette -->
+<g fill="#0A2141">
+<path d="M560 800v-90l70-28 70 28v90z"/>
+<path d="M700 800v-70h130v70z"/>
+<path d="M690 730l75-30 75 30z" fill="#0C2A50"/>
+</g>
+<g fill="#F5B84A" opacity=".5"><rect x="596" y="722" width="14" height="10"/><rect x="640" y="722" width="14" height="10"/><rect x="730" y="748" width="16" height="12"/></g>
+
+<!-- cement mixer truck silhouette -->
+<g fill="#081C38" transform="translate(840,724)">
+<rect x="0" y="36" width="150" height="26" rx="4"/>
+<path d="M120 36V10h34l16 20v6z"/>
+<ellipse cx="62" cy="18" rx="42" ry="26"/>
+<rect x="18" y="2" width="14" height="18" transform="rotate(-24 25 11)"/>
+<circle cx="28" cy="66" r="13"/><circle cx="70" cy="66" r="13"/><circle cx="132" cy="66" r="13"/>
+</g>
+
+<!-- hoarding fence -->
+<g>
+<rect x="0" y="782" width="1600" height="118" fill="#071A35"/>
+<rect x="0" y="782" width="1600" height="10" fill="#10345F"/>
+<g stroke="#10345F" stroke-width="4">
+<path d="M100 792v108M260 792v108M420 792v108M580 792v108M740 792v108M900 792v108M1060 792v108M1220 792v108M1380 792v108M1540 792v108"/>
+</g>
+</g>
+<!-- crane work lights -->
+<g fill="#F5B84A"><circle cx="1040" cy="428" r="4" opacity=".9"/><circle cx="1500" cy="518" r="3.5" opacity=".8"/></g>
+</svg>
