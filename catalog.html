@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- 1. 核心标题优化：把产品品类（Waterproofing, Tile Grout等）和本地精准地名焊死 -->
-    <title>Waterproofing & Building Materials Catalog | HEX Hardware Port Klang</title>
-    
-    <!-- 2. 描述优化：明确列出核心痛点解决方案，吸引本地工程商和散客点击 -->
-    <meta name="description" content="Browse our comprehensive hardware & building materials catalog. Specializing in high-end waterproofing membranes, tile grout, and self-levelling compounds in Port Klang, Selangor.">
-    
-    <!-- 3. 多语言 SEO 声明（英文默认页） -->
-    <link rel="alternate" hreflang="en" href="https://你的域名.com/catalog.html" />
-    <!-- 如果后续有中文产品页，可以解开下面这行 -->
-    <!-- <link rel="alternate" hreflang="zh" href="https://你的域名.com/zh/catalog.html" /> -->
-    <link rel="alternate" hreflang="x-default" href="https://你的域名.com/catalog.html" />
-
-    <!-- 4. 资源加载（保留原本配置） -->
-    <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalog | HEX Hardware — Building Materials & Hardware, Port Klang</title>
+<meta name="description" content="HEX Hardware — 40 years supplying building materials, heavy hardware, tools and high-end waterproofing in Port Klang, Selangor. Mapei, Sika, Bostik, YTL Cement and more.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1784534218">
 </head>
 <body data-page="catalog">
 
@@ -51,6 +39,7 @@
       <img src="assets/logo.png" alt="HEX Hardware logo">
       <span><b>HEX</b> HARDWARE</span>
     </a>
+    <a class="nav-search-icon" href="catalog.html" aria-label="Search products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg></a>
     <button class="nav-toggle" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
     <nav class="nav-links">
       <a href="index.html" data-page="home">Home</a>
@@ -227,8 +216,8 @@
     if(link) link.classList.add('active');
   })();
 </script>
-<script src="products.js"></script>
-<script src="brands-data.js"></script>
+<script src="products.js?v=1784534218"></script>
+<script src="brands-data.js?v=1784534218"></script>
 <script>
 (function(){
   var CATS = {
@@ -446,7 +435,7 @@
   window.addEventListener("hashchange", function(){ window.hexCatalogFilter(location.hash); });
 })();
 </script>
-<script src="site.js" defer></script>
-<script src="i18n.js" defer></script>
+<script src="site.js?v=1784534218" defer></script>
+<script src="i18n.js?v=1784534218" defer></script>
 </body>
 </html>
