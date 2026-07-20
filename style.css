@@ -68,6 +68,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offse
 }
 .btn-wa:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(216,35,42,.35);color:#fff}
 .nav-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:1.2rem;cursor:pointer;color:var(--ink)}
+.nav-search-icon{display:none}
 
 /* ---------- buttons ---------- */
 .btn{
@@ -273,12 +274,22 @@ h3{font-size:1.18rem;font-weight:700}
    width, which doesn't fit next to the logo + menu button and pushed it off
    the right edge of the screen.
    First attempt was to let it wrap onto its own row, but the logo text is
-   wide enough on mobile that this pushed the menu button down too. Simplest
-   safe fix: hide the header search box on mobile only — the Catalog page has
-   its own full search + filters, so nothing is lost, and desktop (where it
-   already works correctly) is completely untouched. */
+   wide enough on mobile that this pushed the menu button down too. Settled
+   on: hide the full header search box on mobile (Catalog page has its own
+   full search + filters, so nothing is lost) and show a compact search icon
+   instead, linking straight to the catalog. To make room, the "HEX HARDWARE"
+   wordmark is hidden on mobile too (the logo mark already reads "HEX
+   HARDWARE" on its own) and the logo is shown a bit larger in its place. */
 @media (max-width: 680px){
   .site-header .nav .nav-search{display:none}
+  .nav-logo span{display:none}
+  .nav-logo img{height:44px}
+  .nav-search-icon{
+    display:flex;align-items:center;justify-content:center;margin-left:auto;
+    width:41px;height:41px;border:1px solid var(--line);border-radius:8px;color:var(--ink);
+  }
+  .nav-search-icon svg{width:19px;height:19px}
+  .nav-toggle{margin-left:0}
 }
 
 
