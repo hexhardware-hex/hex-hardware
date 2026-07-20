@@ -258,12 +258,27 @@ h3{font-size:1.18rem;font-weight:700}
   }
   .nav-links.open{display:flex}
   .nav-toggle{display:block}
-  .grid-3,.grid-4,.brand-grid{grid-template-columns:1fr}
+  .grid-3,.grid-4,.brand-grid,.value-list{grid-template-columns:1fr}
   .cat-items{columns:1}
   .hero-inner{padding:80px 0 90px}
   .hero-stats{flex-wrap:wrap}
   .footer-grid{grid-template-columns:1fr}
   .section{padding:60px 0}
+}
+
+/* ---------- mobile header fix: search bar was overflowing the nav row ----------
+   Two separate .nav-search rules earlier in this file conflict (one meant for
+   desktop's right-side button style, one from an older layout); on small
+   screens the later one won and forced the search box to a fixed ~300px
+   width, which doesn't fit next to the logo + menu button and pushed it off
+   the right edge of the screen.
+   First attempt was to let it wrap onto its own row, but the logo text is
+   wide enough on mobile that this pushed the menu button down too. Simplest
+   safe fix: hide the header search box on mobile only — the Catalog page has
+   its own full search + filters, so nothing is lost, and desktop (where it
+   already works correctly) is completely untouched. */
+@media (max-width: 680px){
+  .site-header .nav .nav-search{display:none}
 }
 
 
@@ -447,7 +462,7 @@ select.prod-opt:focus{border-color:var(--blue)}
 @media (max-width:840px){.nav-search{order:3;flex-basis:100%;max-width:none;margin:10px 0 2px}}
 
 /* ---------- floating buttons ---------- */
-.float-stack{position:fixed;right:18px;bottom:18px;z-index:400;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.float-stack{position:fixed;right:18px;bottom:98px;z-index:400;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
 .float-wa,.float-basket,.float-top{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
   border:none;cursor:pointer;box-shadow:0 8px 26px rgba(11,32,64,.28);transition:transform .15s ease}
 .float-wa{background:#25D366;color:#fff}
@@ -467,7 +482,7 @@ select.prod-opt:focus{border-color:var(--blue)}
 .float-top.show{opacity:1;pointer-events:auto;transform:none}
 
 /* ---------- enquiry basket panel ---------- */
-.basket-panel{position:fixed;right:18px;bottom:88px;width:340px;max-width:calc(100vw - 36px);max-height:70vh;background:#fff;
+.basket-panel{position:fixed;right:18px;bottom:168px;width:340px;max-width:calc(100vw - 36px);max-height:70vh;background:#fff;
   border:1px solid #E4ECF6;border-radius:18px;box-shadow:0 24px 60px rgba(11,32,64,.24);display:none;flex-direction:column;overflow:hidden;z-index:401}
 .basket-panel.open{display:flex}
 .bp-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--steel);color:#fff}
@@ -554,7 +569,7 @@ select.prod-opt:focus{border-color:var(--blue)}
 .float-social.open .fs-i-x{opacity:1;transform:none}
 .fs-toggle::after{content:"";position:absolute;inset:0;border-radius:50%;border:3px solid #25D366;animation:wapulse 2.2s ease-out infinite;pointer-events:none}
 .float-social.open .fs-toggle::after{display:none}
-.fs-items{position:absolute;bottom:calc(100% + 12px);right:3px;display:flex;flex-direction:column;gap:11px;align-items:center}
+.fs-items{position:absolute;bottom:calc(100% + 12px);right:3px;display:flex;flex-direction:column;gap:11px;align-items:center;pointer-events:none}
 .fs-item{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;
   box-shadow:0 6px 20px rgba(11,32,64,.24);opacity:0;transform:translateY(14px) scale(.7);pointer-events:none;
   transition:opacity .22s ease, transform .25s cubic-bezier(.2,.9,.3,1.3)}
@@ -572,7 +587,7 @@ select.prod-opt:focus{border-color:var(--blue)}
 
 /* ---------- mobile: 浮动区不挡内容 ---------- */
 @media (max-width:640px){
-  .float-stack{right:12px;bottom:12px;gap:9px}
+  .float-stack{right:12px;bottom:92px;gap:9px}
   .fs-toggle{width:50px;height:50px}
   .fs-toggle svg{width:24px;height:24px}
   .fs-item{width:44px;height:44px}
@@ -580,7 +595,7 @@ select.prod-opt:focus{border-color:var(--blue)}
   .float-basket{width:46px;height:46px}
   .float-basket svg{width:22px;height:22px}
   .float-top{width:38px;height:38px;font-size:.95rem}
-  .basket-panel{bottom:70px;right:12px}
+  .basket-panel{bottom:150px;right:12px}
 }
 
 
