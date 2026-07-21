@@ -20,27 +20,27 @@
 const HEX_BRAND_PAGES = {
   "mapei": {
     name: "Mapei", filter: "Mapei", logo: "mapei.png", color: "#0B5CAB",
-    tagline: "Italian adhesives, grouts & waterproofing — the lines Malaysian tilers actually use.",
+    tagline: "Mapei Malaysia dealer — Italian adhesives, grouts & waterproofing the pros actually use.",
     lines: ["Tile adhesives — Keraflex / Keraflex Maxi S1 / Mapeset", "Coloured grouts — Ultracolor Plus, Keracolor SF, Fuga Fresca", "Waterproofing — Aquaflex Roof 77 & 99+, Planiseal, Mapeband", "Levelling & primers — Novoplan 200 MY, Primer G, Mapelatex"]
   },
   "sika": {
     name: "Sika", filter: "Sika", logo: "sika.png", color: "#B71C1C",
-    tagline: "Swiss construction chemicals trusted on Malaysian sites.",
+    tagline: "Sika Malaysia dealer — Swiss construction chemicals trusted on Malaysian sites.",
     lines: ["Sealants — Sikaflex PU range", "Roof & wet-area waterproofing", "Concrete repair & bonding", "Tile adhesives & grouts"]
   },
   "bostik": {
     name: "Bostik", filter: "Bostik", logo: "bostik.png", color: "#1B2A6B",
-    tagline: "Waterproofing membranes and sealants for Malaysian wet areas & roofs.",
+    tagline: "Bostik Malaysia — waterproofing membranes and sealants for wet areas & roofs.",
     lines: ["Cementitious waterproofing — Boscocem C350 / C388 / C550", "Membranes — Boscoseal RC2, Boscolastic C750, AC2", "PU & silicone sealants — Seal-N-Flex, N310, S736, Smartflex", "Grouts & adhesives — FAG A326"]
   },
   "pentens": {
     name: "Pentens", filter: "Pentens", logo: "pentens.png", color: "#0E7A3D",
-    tagline: "Malaysian-made waterproofing and construction chemicals.",
+    tagline: "Pentens Malaysia — locally-made waterproofing coatings and construction chemicals.",
     lines: ["Waterproofing coatings & membranes", "Epoxy & PU systems", "Tile adhesives & grouts"]
   },
   "obaproof": {
     name: "Obaproof", filter: "Obaproof", logo: "obaproof.png", color: "#1E88C7",
-    tagline: "Waterproofing and premix solutions for local jobs, big or small.",
+    tagline: "Obaproof Malaysia — waterproofing and premix solutions for local jobs, big or small.",
     lines: ["Waterproofing — WP-500 Fiber, F2-288, Flexxi 2-in-1", "Skim coat & premix plaster", "White cement, silica sand & aggregates", "Fibreglass reinforcement mat"]
   },
   "sun-foil": {
@@ -55,7 +55,7 @@ const HEX_BRAND_PAGES = {
   },
   "ytl-cement": {
     name: "YTL Cement", filter: "YTL", logo: "ytl-cement.png", color: "#0288D1",
-    tagline: "Malaysia's own cement — since 1955.",
+    tagline: "YTL Cement price Malaysia — Castle, Phoenix & Walcrete, since 1955.",
     lines: ["Castle OPC cement 50kg", "Blended & masonry cement", "Bagged & bulk supply"]
   },
   "quickmix": {
@@ -65,43 +65,43 @@ const HEX_BRAND_PAGES = {
   },
   "greencon": {
     name: "Greencon", filter: "Greencon", logo: "greencon.png", color: "#7CB342",
-    tagline: "AAC green building blocks — lighter, faster, cooler walls.",
+    tagline: "Greencon AAC block price Malaysia — lighter, faster, cooler walls.",
     lines: ["AAC lightweight blocks", "Block adhesive & accessories"]
   },
   "uac": {
     name: "UAC", filter: "UAC", logo: "uac.png", color: "#D32F2F",
-    tagline: "Fibre cement boards for ceiling, partition & flooring.",
+    tagline: "UAC board Malaysia — PrimaFlex fibre cement boards for ceiling, partition & flooring.",
     lines: ["PrimaFlex flat sheets", "Ceiling & partition boards", "Flooring boards"]
   },
   "gci": {
     name: "GCI", filter: "GCI", logo: "gci.png", color: "#AD1B3E",
-    tagline: "Metal roofing solutions for Malaysian weather.",
+    tagline: "GCI roofing Malaysia — metal roofing solutions built for Malaysian weather.",
     lines: ["Metal roof sheets", "Roofing accessories & flashings"]
   },
   "mt-bricks": {
     name: "MT Bricks", filter: "MT Bricks", logo: "mt-bricks.png", color: "#8D4A2F",
-    tagline: "Clay bricks for every build.",
+    tagline: "MT Bricks price Malaysia — clay bricks for every build.",
     lines: ["Common clay bricks", "Facing bricks"]
   },
   "henner-bricks": {
     name: "Henner Bricks", filter: "Henner", logo: "henner-bricks.png", color: "#C62828",
-    tagline: "Reliable bricks, ready stock.",
+    tagline: "Henner brick Malaysia — reliable bricks, ready stock.",
     lines: ["Clay bricks", "Cement sand bricks"]
   },
   "saga-paver": {
     name: "Saga Paver", filter: "Saga", logo: "saga-paver.png", color: "#37474F",
-    tagline: "Pavers for driveways, walkways & landscapes.",
+    tagline: "Saga Paver price Malaysia — pavers for driveways, walkways & landscapes.",
     lines: ["Interlocking pavers", "Grass pavers & kerbs"]
   },
   "bmi-monier": {
     name: "BMI Monier", filter: "BMI", logo: "bmi-monier.png", color: "#0288D1",
-    tagline: "Roof tiles Malaysia has trusted for decades.",
+    tagline: "BMI Monier roof tiles Malaysia — trusted for decades.",
     lines: ["Concrete roof tiles", "Ridges & roofing components"]
   },
   "deluxe": {
     name: "Deluxe (Conlex)", filter: "Deluxe", logo: "deluxe.png", color: "#1470E1",
-    tagline: "The complete water tank family — stainless steel, poly & more.",
-    lines: ["Stainless steel tanks — Deluxe / SSDWT / Treinz", "Vertical (with & without stand) and horizontal", "PE poly tanks — round & slim", "Septic, rain harvest & DOS tanks"]
+    tagline: "Water tank price Malaysia — PE poly, stainless steel & SPAN-approved septic tanks.",
+    lines: ["Stainless steel — Deluxe, SSDWT & TReinz 304 / Premium 316", "PE poly tanks — round & slim, vertical & horizontal", "DOS Life & SPAN-approved septic tanks", "Rain harvesting & industrial tanks"]
   },
   "nietz": {
     name: "Nietz", filter: "Nietz", logo: "nietz.png", color: "#263238",
